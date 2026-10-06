@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Landing rendered all requested major sections",
+    "passed": true,
+    "detail": 10
+  },
+  {
+    "name": "Unknown financial values are never zeroed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Get CRUMB opens an accessible real dialog",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Prelaunch modal does not fake a swap",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Escape closes dialog and restores focus",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Missing chart gives explicit feedback",
+    "passed": true,
+    "detail": "No verified chart is published. We won\u2019t send you to a lookalike token."
+  },
+  {
+    "name": "Unannounced social channels never open fake accounts",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Contract copy does not copy an invented address",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Allocation selects and updates graphic",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Allocation diagram represents exactly 100 crumbs",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Selected allocation highlights exactly its percentage",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Tokenomics supports arrow-key navigation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Roadmap controls expand next stage",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Gallery changes mascot and caption",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Avatar exports a self-contained SVG",
+    "passed": true,
+    "detail": 5504
+  },
+  {
+    "name": "Meme reaction toggle has accessible pressed state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Meme download produces actual SVG",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Mascot responds to clicks",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Reduced motion is respected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Manual pause pauses animations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Manual resume works",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No page-level horizontal overflow at 320px",
+    "passed": true,
+    "detail": {
+      "client": 320,
+      "scroll": 320
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 360px",
+    "passed": true,
+    "detail": {
+      "client": 360,
+      "scroll": 360
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 375px",
+    "passed": true,
+    "detail": {
+      "client": 375,
+      "scroll": 375
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 390px",
+    "passed": true,
+    "detail": {
+      "client": 390,
+      "scroll": 390
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 430px",
+    "passed": true,
+    "detail": {
+      "client": 430,
+      "scroll": 430
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 700px",
+    "passed": true,
+    "detail": {
+      "client": 700,
+      "scroll": 700
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 768px",
+    "passed": true,
+    "detail": {
+      "client": 768,
+      "scroll": 768
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 1024px",
+    "passed": true,
+    "detail": {
+      "client": 1024,
+      "scroll": 1024
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 1440px",
+    "passed": true,
+    "detail": {
+      "client": 1440,
+      "scroll": 1440
+    }
+  },
+  {
+    "name": "No page-level horizontal overflow at 1920px",
+    "passed": true,
+    "detail": {
+      "client": 1920,
+      "scroll": 1920
+    }
+  },
+  {
+    "name": "Mobile menu opens",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Mobile menu closes with Escape",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No runtime JavaScript errors",
+    "passed": true,
+    "detail": []
+  }
+]

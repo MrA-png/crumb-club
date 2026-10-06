@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { Landing } from '../components/Landing';
+import { site } from '../lib/config';
+import { bundleInteractions } from './bundle-interactions';
+const root = process.cwd();
+const html = renderToStaticMarkup(<Landing />);
+const css = fs.readFileSync(path.join(root, 'styles/design.css'), 'utf8');
+const icon = fs.readFileSync(path.join(root, 'public/icon.svg'), 'utf8');
+const script = bundleInteractions(root);
+const config = JSON.stringify(site).replaceAll('<', '\\u003c');
+const out = path.join(root, 'preview');
+fs.mkdirSync(out, { recursive: true });
+fs.writeFileSync(path.join(out, 'index.html'), `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f1e9"><meta name="description" content="Small bird. Big crumb energy. CRUMB is an original meme-brand concept."><title>CRUMB — Small bird. Big crumb energy.</title><link rel="icon" href="data:image/svg+xml,${encodeURIComponent(icon)}"><style>${css}</style></head><body>${html}<script>${script.replaceAll('</script', '<\\/script')}\nwindow.CrumbPreview.mountSite(${config});</script></body></html>`);
+console.log(`Standalone preview: ${path.join(out, 'index.html')}`);

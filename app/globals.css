@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../styles/design.css";
+@theme {
+  --color-crumb-cream: #f4f1e9;
+  --color-crumb-ink: #20221f;
+  --color-crumb-lime: #d6f56a;
+  --font-sans: "Arial", "Helvetica Neue", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
