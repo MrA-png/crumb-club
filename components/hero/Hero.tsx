@@ -1,6 +1,8 @@
-import { ArrowUpRight, ArrowDown, MousePointer2 } from 'lucide-react';
+import { ArrowUpRight, ArrowDown, MousePointer2, Copy, Check, ExternalLink } from 'lucide-react';
 import { Mascot, Crumb, BirdIcon } from '@/components/brand/Mascot';
 import { Socials } from '@/components/ui/Socials';
+import { site } from '@/lib/config';
+
 export function Hero() {
   return <section id="home" className="hero" aria-labelledby="hero-title" data-section>
     <div className="hero-inner wrap">
@@ -11,6 +13,48 @@ export function Hero() {
         </h1>
         <p className="hero-description" data-enter>No grand master plan. Just a street-smart pigeon,<br className="desktop-break" /> a pocket full of crumbs, and a very online flock.</p>
         <div className="hero-ctas" data-enter><button className="button button-dark magnetic" type="button" data-buy data-magnetic>Get your $CRUMB <ArrowUpRight size={22} /></button><a className="button button-outline magnetic" href="#community" data-magnetic>Meet the flock <ArrowUpRight size={20} /></a></div>
+        {site.contract && (
+          <div className="hero-ca-strip" data-enter>
+            <div className="hero-ca-header">
+              <div className="hero-ca-tag">
+                <span className="status-dot" />
+                <span className="mono">OFFICIAL CA ({site.chain || 'ROBINHOOD CHAIN'})</span>
+              </div>
+              <a
+                href={site.ponsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-ca-pons-badge"
+                title="Trade on Pons Family"
+              >
+                <span>Pons Family</span>
+                <ArrowUpRight size={12} />
+              </a>
+            </div>
+            <div className="hero-ca-body">
+              <a
+                href={site.ponsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-ca-address-link"
+                title="Open $CRUMB in Pons Family"
+              >
+                <code className="hero-ca-code" data-contract-text>{site.contract}</code>
+                <ExternalLink size={13} className="hero-ca-icon" />
+              </a>
+              <button
+                type="button"
+                className="copy-button hero-ca-copy"
+                data-copy-contract
+                aria-label="Copy contract address"
+              >
+                <Copy className="copy-default" size={14} />
+                <Check className="copy-success" size={14} />
+                <span data-copy-label>Copy</span>
+              </button>
+            </div>
+          </div>
+        )}
         <div className="hero-bottom" data-enter><div className="mini-flock" aria-hidden="true">{(['normal', 'degen', 'rich', 'sleepy'] as const).map(m => <span key={m}><Mascot compact mood={m} /></span>)}</div><div className="hero-flock-copy"><strong>Birds of a feather.</strong><span>Weird together. Better together.</span></div><Socials /></div>
       </div>
       <div className="hero-art" data-hero-art>
